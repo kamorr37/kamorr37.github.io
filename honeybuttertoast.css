@@ -172,6 +172,7 @@ main {
   display: flex;
   gap: 14px;
   margin-bottom: 20px;
+  align-items: stretch;
 }
 
 .introtwo { display:flex;
@@ -250,7 +251,7 @@ tr:nth-of-type(odd) { background-color: var(--accent); }
 .intro-image, .overview-image {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 .get-started-image {
@@ -268,11 +269,38 @@ tr:nth-of-type(odd) { background-color: var(--accent); }
 }
 
 .intro-image img, .overview-image img {
+  align-items: stretch;
   width: 100%;
   max-width: 320px;
   height: auto;
   border-radius: 10px;
   border: 2px solid var(--secondary);
+  background: var(--background);
+}
+
+.health, .science {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  align-items: stretch; 
+  min-height: 400px;   
+}
+
+.health-image, .science-image {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.health-image img,
+.science-image img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover; 
+  border-radius: 10px;
+  border: 4px solid var(--secondary);
   background: var(--background);
 }
 
